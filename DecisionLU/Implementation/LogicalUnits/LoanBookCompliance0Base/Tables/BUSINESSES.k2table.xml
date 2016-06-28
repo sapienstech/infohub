@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>BUSINESSES</Name>
+  <ID>tbl_BUSINESSES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_20594b0cabd74a288435847554ab3022" index="0" datatype="Integer" mandatory="true" />
+    <Column name="NAME" id="tblCol_dfc9aa6f0c774259b2c59ca1e03734d7" index="1" datatype="Text" />
+    <Column name="NUMBER_OF_BUYERS" id="tblCol_3a713317e7034d96861a581563bf3911" index="2" datatype="Integer" />
+    <Column name="CITY_CODE" id="tblCol_e77e76e7996f4140a53b44a5b168f31b" index="3" datatype="Integer" />
+    <Column name="VALID_LICENSE" id="tblCol_706d6b42833a47f8bb12c2218bba5f69" index="4" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_20594b0cabd74a288435847554ab3022" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

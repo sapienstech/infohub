@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TEST_COND</Name>
+  <ID>tbl_TEST_COND</ID>
+  <EntityId>tblCol_3101d1d6e061459985453f0ced3fe10d</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_3101d1d6e061459985453f0ced3fe10d" index="0" datatype="Integer" />
+    <Column name="VALUE" id="tblCol_34fad0fae1b94d2e8f3e955a6173087b" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

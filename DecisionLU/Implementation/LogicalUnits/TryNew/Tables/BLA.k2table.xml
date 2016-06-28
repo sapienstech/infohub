@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>BLA</Name>
+  <ID>tbl_BLA</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BLA" id="tblCol_d8a2dfe17c944f9791307b1bad1d367a" index="0" datatype="text" />
+    <Column name="YADA" id="tblCol_fca50ef94b1c44e69ba9eec28433d064" index="1" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>onFlowCompletion</Name>
+  <ID>Decision.onFlowCompletion</ID>
+  <Category>Decision</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>		JAXBContext jaxbContext = JAXBContext.newInstance(IoGroup.class);
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		IoGroup ioGroup = (IoGroup) jaxbUnmarshaller
+				.unmarshal(new StringReader(executionResult));
+
+		String rootTable = getRootDecisionTableName(luType);
+		populateConclusionTableWithResults(ioGroup, rootTable, luType, null);</FunctionBody>
+  <IsSyntaxValid>false</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="executionResult" id="fi.Decision.onFlowCompletion.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="luType" id="fi.Decision.onFlowCompletion.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams />
+</KFunction>

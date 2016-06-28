@@ -1,0 +1,8 @@
+﻿<Graph name="BORROWER_LOANS.query_BORROWER_LOANS.k2tablePop.bin" lastPartID="9">
+  <TableNode partID="0" name="BORROWER_LOANS" pos="314.280029 11.8906288" width="309.324158" />
+  <DBQueryNode partID="5" name="oracle_cloud" pos="9.999985 7.927086" size="259.28006 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_BORROWER_LOANS","ID":"query_query_BORROWER_LOANS","ConnName":"oracle_cloud","SQL":"SELECT * FROM BORROWER_LOANS","ColumnsList":[{"ID":"queryCol_0","Name":"BORROWER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"LOAN_ID","DataType":"Integer","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="269.280029 43.9635429 279.280029 43.9635429 281.780029 25 301.780029 25 304.280029 42.9270859 314.280029 42.9270859" fromNodePartID="5" fromNodeColumnName="BORROWER_ID" toNodePartID="0" toNodeColumnName="BORROWER_ID" />
+  <Link partID="9" from="2" to="3" pointsArr="269.280029 56.03646 279.280029 56.03646 281.780029 50 301.780029 50 304.280029 55.0000038 314.280029 55.0000038" fromNodePartID="5" fromNodeColumnName="LOAN_ID" toNodePartID="0" toNodeColumnName="LOAN_ID" />
+</Graph>

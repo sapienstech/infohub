@@ -1,0 +1,10 @@
+﻿<Graph name="DECISION_BORROWER.DECISION_BORROWERS_POP.k2tablePop.bin" lastPartID="297">
+  <TableNode partID="0" name="DECISION_BORROWER" pos="639.212158 210" width="310.112366" />
+  <DBQueryNode partID="134" name="oracle_cloud" pos="106 272" size="253 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_BORROWERS","ID":"query_query_BORROWERS","ConnName":"oracle_cloud","SQL":"Select BORROWERS.AGE,\r\n  CREDIT_RATE.RATE,\r\n  BORROWER_LOANS.LOAN_ID,\r\n  BORROWER_LOANS.BORROWER_ID\r\nFrom BORROWERS\r\n  Inner Join BORROWER_LOANS On BORROWERS.ID = BORROWER_LOANS.BORROWER_ID\r\n  Inner Join LOANS On BORROWER_LOANS.LOAN_ID = LOANS.ID\r\n  Inner Join BANK On LOANS.BANK_ID = BANK.ID\r\n  Inner Join CREDIT_RATE On CREDIT_RATE.ID = BORROWERS.CREDIT_RATE_ID","ColumnsList":[{"ID":"queryCol_0","Name":"AGE","DataType":"Real","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"RATE","DataType":"Real","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"LOAN_ID","DataType":"Real","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"BORROWER_ID","DataType":"Real","Index":3,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="140" from="0" to="1" pointsArr="359 308.036469 369 308.036469 629.212158 241.036453 639.212158 241.036453" fromNodePartID="134" fromNodeColumnName="AGE" toNodePartID="0" toNodeColumnName="BORROWER_AGE" />
+  <Link partID="142" from="2" to="3" pointsArr="359 320.109375 369 320.109375 629.212158 253.109375 639.212158 253.109375" fromNodePartID="134" fromNodeColumnName="RATE" toNodePartID="0" toNodeColumnName="BORROWER_CREDIT_RATE" />
+  <Link partID="233" from="4" to="5" pointsArr="359 332.182281 369 332.182281 629.212158 265.182281 639.212158 265.182281" fromNodePartID="134" fromNodeColumnName="LOAN_ID" toNodePartID="0" toNodeColumnName="LOAN_ID" />
+  <Link partID="277" from="6" to="7" pointsArr="359 344.2552 369 344.2552 629.212158 277.2552 639.212158 277.2552" fromNodePartID="134" fromNodeColumnName="BORROWER_ID" toNodePartID="0" toNodeColumnName="BORROWER_ID" />
+</Graph>

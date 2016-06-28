@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_k2view_attempt</ID>
+  <PopulationObjectName>query_k2view_attempt</PopulationObjectName>
+  <TableName>attempt</TableName>
+  <RootItemID>query_query_k2view_attempt</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="name" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_k2view_attempt" name="query_k2view_attempt" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbCassandra">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="name" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM k2view.attempt]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_k2view_attempt" fromColID="queryCol_0" toItemID="tbl_attempt" toColID="tblCol_877070e3f1c34628bbba1fcd138b8502" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_k2view_attempt" fromColID="queryCol_1" toItemID="tbl_attempt" toColID="tblCol_a892842bec1f4c72b8ed6ca554bddc45" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

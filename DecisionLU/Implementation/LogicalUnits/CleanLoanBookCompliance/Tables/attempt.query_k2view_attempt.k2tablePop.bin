@@ -1,0 +1,8 @@
+﻿<Graph name="attempt.query_k2view_attempt.k2tablePop.bin" lastPartID="15">
+  <TableNode partID="0" name="attempt" pos="331 43.89063" width="309.324219" />
+  <DBQueryNode partID="5" name="dbCassandra" pos="10 7.927086" size="253 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_k2view_attempt","ID":"query_query_k2view_attempt","ConnName":"dbCassandra","SQL":"SELECT * FROM k2view.attempt","ColumnsList":[{"ID":"queryCol_0","Name":"id","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"name","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="263 43.9635429 273 43.9635429 321 74.9270859 331 74.9270859" fromNodePartID="5" fromNodeColumnName="id" toNodePartID="0" toNodeColumnName="id" />
+  <Link partID="9" from="2" to="3" pointsArr="263 56.03646 273 56.03646 321 87 331 87" fromNodePartID="5" fromNodeColumnName="name" toNodePartID="0" toNodeColumnName="name" />
+</Graph>

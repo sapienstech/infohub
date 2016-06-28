@@ -1,0 +1,8 @@
+﻿<Graph name="BLA.BLA_POP.k2tablePop.bin" lastPartID="25">
+  <TableNode partID="0" name="BLA" pos="524 85" width="309.3241" />
+  <DBQueryNode partID="5" name="ludb" pos="60 88" size="253 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_CITY","ID":"query_query_CITY","ConnName":"ludb","SQL":"Select TryNew.CITY.ID As cityId,\r\n  TryNew.CITY.NAME As cityName,\r\n  TryNew.TRY.ID As tryId,\r\n  TryNew.TRY.NAME As tryName\r\nFrom TryNew.CITY\r\n  Inner Join TryNew.TRY On TryNew.CITY.ID = TryNew.TRY.ID","ColumnsList":[{"ID":"queryCol_0","Name":"cityId","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"cityName","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"tryId","DataType":"Integer","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"tryName","DataType":"Text","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="313 136.109375 323 136.109375 514 116.036461 524 116.036461" fromNodePartID="5" fromNodeColumnName="cityName" toNodePartID="0" toNodeColumnName="BLA" />
+  <Link partID="17" from="2" to="3" pointsArr="313 160.2552 323 160.2552 514 128.109375 524 128.109375" fromNodePartID="5" fromNodeColumnName="tryName" toNodePartID="0" toNodeColumnName="YADA" />
+</Graph>

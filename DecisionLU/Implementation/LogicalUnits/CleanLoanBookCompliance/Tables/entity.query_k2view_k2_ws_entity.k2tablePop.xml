@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_k2view_k2_ws_entity</ID>
+  <PopulationObjectName>query_k2view_k2_ws_entity</PopulationObjectName>
+  <TableName>entity</TableName>
+  <RootItemID>query_query_k2view_k2_ws_entity</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="data" id="queryCol_1" dataType="BLOB" index="1" />
+    <Arg name="save_in_progress" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="sync_version" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_k2view_k2_ws_entity" name="query_k2view_k2_ws_entity" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbCassandra">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="id" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="data" dataType="BLOB" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="save_in_progress" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="sync_version" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM k2view_k2_ws.entity]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_k2view_k2_ws_entity" fromColID="queryCol_0" toItemID="tbl_entity" toColID="tblCol_27e9122bfb31453384b0898b87679aa9" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_k2view_k2_ws_entity" fromColID="queryCol_1" toItemID="tbl_entity" toColID="tblCol_05828790ca2d4ffc89e3f1ee4268f11b" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_k2view_k2_ws_entity" fromColID="queryCol_2" toItemID="tbl_entity" toColID="tblCol_9518e82d55fd475289f103bdad1b8400" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_k2view_k2_ws_entity" fromColID="queryCol_3" toItemID="tbl_entity" toColID="tblCol_2412d7af505e430c8eaace6fa36daabe" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

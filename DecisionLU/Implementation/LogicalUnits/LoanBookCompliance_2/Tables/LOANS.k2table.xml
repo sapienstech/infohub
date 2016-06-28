@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LOANS</Name>
+  <ID>tbl_LOANS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_40245f7872ed42a780b3524ffba99256" index="0" datatype="Integer" mandatory="true" />
+    <Column name="LOAN_TYPE" id="tblCol_4c71b90d3dec4402aa74d38e0cf7c206" index="1" datatype="Text" />
+    <Column name="BANK_ID" id="tblCol_0cb5156ff1a149daa1f167936411d96d" index="2" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_40245f7872ed42a780b3524ffba99256" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

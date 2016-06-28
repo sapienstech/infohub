@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>LOAN_POP</ID>
+  <PopulationObjectName>LOAN_POP</PopulationObjectName>
+  <TableName>DECISION_LOAN</TableName>
+  <RootItemID>f_6</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ROOT_ID" id="fi_6.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_6" name="dummyROOT" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="dummyROOT.k2function.xml">
+      <InputsList>
+        <Input id="fi_6.0" name="ROOT_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_6.0" name="ROOT_ID" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="9" fromNodeOrder="0" fromItemID="f_6" fromColID="fo_6.0" toItemID="tbl_DECISION_LOAN" toColID="tblCol_a7eb7be93ac84bb292763c945625d1e4" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

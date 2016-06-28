@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>BORROWERS</Name>
+  <ID>tbl_BORROWERS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_068a02f7e9124465860ca55a980731e0" index="0" datatype="Integer" mandatory="true" />
+    <Column name="NAME" id="tblCol_3fa5e00d39684d868cc8a6d5478bbcb6" index="1" datatype="Text" />
+    <Column name="AGE" id="tblCol_eb9ee0ff50d243c88d08f692dde2c0fa" index="2" datatype="Integer" />
+    <Column name="CREDIT_RATE_ID" id="tblCol_5f2fc1b073414820a3a9486b79e92f1e" index="3" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_068a02f7e9124465860ca55a980731e0" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

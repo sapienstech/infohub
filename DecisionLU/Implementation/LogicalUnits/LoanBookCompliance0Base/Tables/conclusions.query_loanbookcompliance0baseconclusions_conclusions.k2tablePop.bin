@@ -1,0 +1,11 @@
+﻿<Graph name="conclusions.query_loanbookcompliance0baseconclusions_conclusions.k2tablePop.bin" lastPartID="30">
+  <TableNode partID="0" name="conclusions" pos="489.2604 77.78125" width="309.3242" />
+  <DBQueryNode partID="8" name="dbCassandra" pos="10 14.8177109" size="380.260376 120.364571" isRoot="true">
+    <DBQuery>{"Name":"query_loanbookcompliance0baseconclusions_conclusions","ID":"query_query_loanbookcompliance0baseconclusions_conclusions","ConnName":"dbCassandra","SQL":"SELECT * FROM loanbookcompliance0baseconclusions.conclusions","ColumnsList":[{"ID":"queryCol_0","Name":"instance_id","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"entity_name","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"entity_id","DataType":"Integer","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"value","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"key","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="334.619049 50.8541679 344.619049 50.8541679 479.2604 108.817711 489.2604 108.817711" fromNodePartID="8" fromNodeColumnName="instance_id" toNodePartID="0" toNodeColumnName="instance_id" />
+  <Link partID="15" from="2" to="3" pointsArr="334.619049 62.9270859 344.619049 62.9270859 479.2604 120.890625 489.2604 120.890625" fromNodePartID="8" fromNodeColumnName="entity_name" toNodePartID="0" toNodeColumnName="entity_name" />
+  <Link partID="16" from="4" to="5" pointsArr="334.619049 75 344.619049 75 479.2604 132.963547 489.2604 132.963547" fromNodePartID="8" fromNodeColumnName="entity_id" toNodePartID="0" toNodeColumnName="entity_id" />
+  <Link partID="17" from="6" to="7" pointsArr="334.619049 87.0729141 344.619049 87.0729141 479.2604 145.036453 489.2604 145.036453" fromNodePartID="8" fromNodeColumnName="value" toNodePartID="0" toNodeColumnName="value" />
+  <Link partID="18" from="8" to="9" pointsArr="334.619049 99.14583 344.619049 99.14583 479.2604 157.109375 489.2604 157.109375" fromNodePartID="8" fromNodeColumnName="key" toNodePartID="0" toNodeColumnName="key" />
+</Graph>

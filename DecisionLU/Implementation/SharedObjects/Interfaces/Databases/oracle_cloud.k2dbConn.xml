@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="oracle_cloud" type="Oracle" version="1.8.0.10">
+  <Active>true</Active>
+  <DataSource>54.228.242.219</DataSource>
+  <PortNum>921</PortNum>
+  <DataBase>xe</DataBase>
+  <UserId>k2view_test</UserId>
+  <Password>VPazhdTgFHy9Uqx2Mg3Pkt5ah+BICUm0keJt00hhPCk=:bKjgCA7p43l5xB7tPP/Awz6xYOqddJZ6n4VaKVf7DGY=</Password>
+  <ConnectionStringClient>Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=54.228.242.219)(PORT=921)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xe)));User Id=k2view_test;Password=[PASSWORD];</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:oracle:thin:@54.228.242.219:921/xe</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

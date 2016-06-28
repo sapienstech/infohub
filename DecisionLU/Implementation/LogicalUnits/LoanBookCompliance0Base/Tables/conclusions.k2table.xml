@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>conclusions</Name>
+  <ID>tbl_conclusions</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="instance_id" id="tblCol_81102f175def4295842a6f1031d0fc8b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="entity_name" id="tblCol_6c09e048b9bd4fe9855f005d1ddd6232" index="1" datatype="Text" mandatory="true" />
+    <Column name="entity_id" id="tblCol_c5c163bdea3b41e99edfa6479207ac5f" index="2" datatype="Integer" mandatory="true" />
+    <Column name="value" id="tblCol_f1b2d4fcb9d54b238be878a6397fbdcf" index="3" datatype="Text" mandatory="true" />
+    <Column name="key" id="tblCol_795db9fca9cb4de0bd43ea4e6a9d26c3" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

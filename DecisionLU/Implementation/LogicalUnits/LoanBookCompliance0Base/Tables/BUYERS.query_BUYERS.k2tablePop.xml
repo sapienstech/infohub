@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_BUYERS</ID>
+  <PopulationObjectName>query_BUYERS</PopulationObjectName>
+  <TableName>BUYERS</TableName>
+  <RootItemID>query_query_BUYERS</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="NET_WORTH" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="CITY_CODE" id="queryCol_3" dataType="Integer" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_BUYERS" name="query_BUYERS" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="oracle_cloud">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="NET_WORTH" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="CITY_CODE" dataType="Integer" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM BUYERS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_BUYERS" fromColID="queryCol_0" toItemID="tbl_BUYERS" toColID="tblCol_7e81279e883442c5bc92af99fd8d2dea" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_BUYERS" fromColID="queryCol_1" toItemID="tbl_BUYERS" toColID="tblCol_1fb85e06dc8948ba927e8e311695831c" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_BUYERS" fromColID="queryCol_2" toItemID="tbl_BUYERS" toColID="tblCol_b11090aeb3d44025a53413870c7a393f" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_BUYERS" fromColID="queryCol_3" toItemID="tbl_BUYERS" toColID="tblCol_f56e39e644fe46b8848eabff62d5ddac" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

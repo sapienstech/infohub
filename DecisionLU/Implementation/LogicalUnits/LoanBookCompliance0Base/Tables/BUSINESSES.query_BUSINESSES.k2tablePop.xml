@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_BUSINESSES</ID>
+  <PopulationObjectName>query_BUSINESSES</PopulationObjectName>
+  <TableName>BUSINESSES</TableName>
+  <RootItemID>query_query_BUSINESSES</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="NUMBER_OF_BUYERS" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="CITY_CODE" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="VALID_LICENSE" id="queryCol_4" dataType="Integer" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_BUSINESSES" name="query_BUSINESSES" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="oracle_cloud">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="NUMBER_OF_BUYERS" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="CITY_CODE" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="VALID_LICENSE" dataType="Integer" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM BUSINESSES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_BUSINESSES" fromColID="queryCol_0" toItemID="tbl_BUSINESSES" toColID="tblCol_20594b0cabd74a288435847554ab3022" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_BUSINESSES" fromColID="queryCol_1" toItemID="tbl_BUSINESSES" toColID="tblCol_dfc9aa6f0c774259b2c59ca1e03734d7" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_BUSINESSES" fromColID="queryCol_2" toItemID="tbl_BUSINESSES" toColID="tblCol_3a713317e7034d96861a581563bf3911" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_BUSINESSES" fromColID="queryCol_3" toItemID="tbl_BUSINESSES" toColID="tblCol_e77e76e7996f4140a53b44a5b168f31b" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_BUSINESSES" fromColID="queryCol_4" toItemID="tbl_BUSINESSES" toColID="tblCol_706d6b42833a47f8bb12c2218bba5f69" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

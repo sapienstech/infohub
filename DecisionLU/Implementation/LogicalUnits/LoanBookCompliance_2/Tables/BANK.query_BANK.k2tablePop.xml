@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_BANK</ID>
+  <PopulationObjectName>query_BANK</PopulationObjectName>
+  <TableName>BANK</TableName>
+  <RootItemID>query_query_BANK</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_BANK" name="query_BANK" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="oracle_cloud">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="NAME" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM BANK]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_BANK" fromColID="queryCol_0" toItemID="tbl_BANK" toColID="tblCol_8d1b9852bc834b0086a0d58a71df77c6" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_BANK" fromColID="queryCol_1" toItemID="tbl_BANK" toColID="tblCol_033eb84febfe4f4fbea947fcb741ced6" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

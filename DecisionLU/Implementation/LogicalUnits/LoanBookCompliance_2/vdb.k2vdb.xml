@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.10">
+  <Name>vdb</Name>
+  <RootView>BANK</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>BANK</Table>
+    <Table>DECISION_ROOT</Table>
+    <Table>DECISION_LOAN</Table>
+    <Table>DECISION_BORROWER</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="BANK">
+      <Populations>
+        <Population id="query_BANK" name="query_BANK" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="DECISION_ROOT">
+      <Populations>
+        <Population id="DECISION_ROOT_POP" name="DECISION_ROOT_POP" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="DECISION_LOAN">
+      <Populations>
+        <Population id="DECISION_LOAN_POP" name="DECISION_LOAN_POP" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="DECISION_BORROWER">
+      <Populations>
+        <Population id="DECISION_BORROWERS_POP" name="DECISION_BORROWERS_POP" order="4" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList />
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="523">
+      <From tableType="TableObject" table="DECISION_LOAN" column="LOAN_ID" columnId="tblCol_838115c486fe4eb881ac4876c03a143d" />
+      <To tableType="TableObject" table="DECISION_BORROWER" populationObjectName="DECISION_BORROWERS_POP" column="LOAN_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="721">
+      <From tableType="TableObject" table="DECISION_ROOT" column="ROOT_ID" columnId="tblCol_717867247478491f87737d461b59d6cc" />
+      <To tableType="TableObject" table="DECISION_LOAN" populationObjectName="DECISION_LOAN_POP" column="ROOT_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="828">
+      <From tableType="TableObject" table="BANK" column="ID" columnId="tblCol_8d1b9852bc834b0086a0d58a71df77c6" />
+      <To tableType="TableObject" table="DECISION_ROOT" populationObjectName="DECISION_ROOT_POP" column="ROOT_ID" columnId="fi_18.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

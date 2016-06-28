@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_eli_rocks</ID>
+  <PopulationObjectName>query_eli_rocks</PopulationObjectName>
+  <TableName>rocks</TableName>
+  <RootItemID>query_query_eli_rocks</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="name" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_eli_rocks" name="query_eli_rocks" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbCassandra">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="name" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM eli.rocks]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_eli_rocks" fromColID="queryCol_0" toItemID="tbl_rocks" toColID="tblCol_569313bfb3e64d2c819bb024b2cd0e32" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_eli_rocks" fromColID="queryCol_1" toItemID="tbl_rocks" toColID="tblCol_aebbf3a5f5be4273848cb70d6271a733" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

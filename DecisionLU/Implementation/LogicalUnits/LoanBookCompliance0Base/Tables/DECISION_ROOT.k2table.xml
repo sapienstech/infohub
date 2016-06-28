@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DECISION_ROOT</Name>
+  <ID>tbl_DECISION_ROOT</ID>
+  <EntityId>tblCol_717867247478491f87737d461b59d6cc</EntityId>
+  <LazyDataUpdate enabled="true" performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ROOT_ID" id="tblCol_717867247478491f87737d461b59d6cc" index="0" datatype="integer" />
+    <Column name="EXECUTION_DATE" id="tblCol_6d13b91726b4410b9ede94de5ac37925" index="1" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

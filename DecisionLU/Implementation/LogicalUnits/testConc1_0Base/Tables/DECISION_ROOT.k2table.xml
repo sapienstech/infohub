@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DECISION_ROOT</Name>
+  <ID>tbl_DECISION_ROOT</ID>
+  <EntityId>tblCol_881f87b55ca74e299c7f05b60ef2b1ff</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="TEST_COND" id="tblCol_f22be2fba623493a916ce26e8a0604c6" index="0" datatype="text" />
+    <Column name="ROOT_ID" id="tblCol_881f87b55ca74e299c7f05b60ef2b1ff" index="1" datatype="integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

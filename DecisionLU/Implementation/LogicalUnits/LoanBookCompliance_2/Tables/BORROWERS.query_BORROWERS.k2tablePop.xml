@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_BORROWERS</ID>
+  <PopulationObjectName>query_BORROWERS</PopulationObjectName>
+  <TableName>BORROWERS</TableName>
+  <RootItemID>query_query_BORROWERS</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="AGE" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="CREDIT_RATE_ID" id="queryCol_3" dataType="Integer" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_BORROWERS" name="query_BORROWERS" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="oracle_cloud">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="AGE" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="CREDIT_RATE_ID" dataType="Integer" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM BORROWERS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_BORROWERS" fromColID="queryCol_0" toItemID="tbl_BORROWERS" toColID="tblCol_068a02f7e9124465860ca55a980731e0" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_BORROWERS" fromColID="queryCol_1" toItemID="tbl_BORROWERS" toColID="tblCol_3fa5e00d39684d868cc8a6d5478bbcb6" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_BORROWERS" fromColID="queryCol_2" toItemID="tbl_BORROWERS" toColID="tblCol_eb9ee0ff50d243c88d08f692dde2c0fa" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_BORROWERS" fromColID="queryCol_3" toItemID="tbl_BORROWERS" toColID="tblCol_5f2fc1b073414820a3a9486b79e92f1e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

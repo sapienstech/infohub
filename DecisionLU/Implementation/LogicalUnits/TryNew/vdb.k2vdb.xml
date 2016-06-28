@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.10">
+  <Name>vdb</Name>
+  <RootView>CITY</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>CITY</Table>
+    <Table>try</Table>
+    <Table>BLA</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="CITY">
+      <Populations>
+        <Population id="query_CITY" name="query_CITY" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="try">
+      <Populations>
+        <Population id="query_eli_try" name="query_eli_try" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="BLA">
+      <Populations>
+        <Population id="BLA_POP" name="BLA_POP" order="3" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList />
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="54">
+      <From tableType="TableObject" table="CITY" column="ID" columnId="tblCol_612620bf6f1d43cea34259795e651c25" />
+      <To tableType="TableObject" table="try" populationObjectName="query_eli_try" column="id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="82">
+      <From tableType="TableObject" table="try" column="id" columnId="tblCol_f4f8a9e538db47079c413523eeb6dbd6" />
+      <To tableType="TableObject" table="BLA" populationObjectName="BLA_POP" column="cityId" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnCassandra" name="dbCassandra" type="Cassandra" version="1.8.0.10">
+  <Active>true</Active>
+  <DataSource>78.137.99.238</DataSource>
+  <PortNum>9042</PortNum>
+  <DataBase>eli</DataBase>
+  <UserId>admin</UserId>
+  <Password>vSa94lECeVRMNAm+0ahsggSbeYyIokE3mU0iRA1YdXA=:cQ7ex6IU+x/eOjxoR7EonPYFp0uJNczIagqJwr4srns=</Password>
+  <ConnectionStringClient>Contact Points='78.137.99.238';Port=9042;Default Keyspace='eli';Username='admin';Password='[PASSWORD]';</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:cassandra://78.137.99.238:9042/eli?consistency=QUORUM</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

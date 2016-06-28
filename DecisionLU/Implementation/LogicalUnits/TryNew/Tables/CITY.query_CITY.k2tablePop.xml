@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_CITY</ID>
+  <PopulationObjectName>query_CITY</PopulationObjectName>
+  <TableName>CITY</TableName>
+  <RootItemID>query_query_CITY</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_CITY" name="query_CITY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOracle">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM CITY]]></SQL>
+    </Item>
+    <Item id="f_45" name="stringValsTogether" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="stringValsTogether.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_45.0" name="val" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_CITY" fromColID="queryCol_0" toItemID="tbl_CITY" toColID="tblCol_612620bf6f1d43cea34259795e651c25" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="f_45" fromColID="fo_45.0" toItemID="tbl_CITY" toColID="tblCol_951a296949ac4ceeac20b24361c2fc53" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

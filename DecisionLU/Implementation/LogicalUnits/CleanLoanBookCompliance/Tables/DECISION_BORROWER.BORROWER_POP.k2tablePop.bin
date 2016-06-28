@@ -1,0 +1,7 @@
+﻿<Graph name="DECISION_BORROWER.BORROWER_POP.k2tablePop.bin" lastPartID="10">
+  <TableNode partID="0" name="DECISION_BORROWER" pos="455 141" width="309.3241" />
+  <FunctionMapNode id="0" L0="1" R0="2" partID="7" topLabel="dummyROOT (7)" pos="207 190" size="153.8577 45.09114" isRoot="true">
+    <KFunction>{"Name":"dummyROOT","ID":"f_7","Category":"ROOT","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"Object[] returnVal = new Object[]{ ROOT_ID };\n\nyield(returnVal);","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"ROOT_ID","ID":"fi_7.0","Index":0,"DataType":"Integer","Comment":""}],"outputParams":[{"Name":"ROOT_ID","ID":"fo_7.0","Index":0,"DataType":"Integer","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="10" from="2" to="3" pointsArr="360.8577 215.091141 370.8577 215.091141 445 172.036453 455 172.036453" fromNodePartID="7" fromNodeColumnName="ROOT_ID" toNodePartID="0" toNodeColumnName="LOAN_ID" />
+</Graph>

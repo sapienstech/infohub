@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DECISION_BORROWER</Name>
+  <ID>tbl_DECISION_BORROWER</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="LOAN_ID" id="tblCol_3b3696a13f5640e7b09d8fb556f89bf0" index="0" datatype="integer" />
+    <Column name="BORROWER_ID" id="tblCol_0b75abc2496f4cd6804cfb75b283f915" index="1" datatype="integer" />
+    <Column name="BORROWER_AGE" id="tblCol_48b6929618214da1829513f44aee5148" index="2" datatype="integer" />
+    <Column name="BORROWER_CREDIT_RATE" id="tblCol_7859fca2d96c4631b87c4d7b127d1976" index="3" datatype="integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

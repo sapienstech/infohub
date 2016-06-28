@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>DECISION_ROOT_POP</ID>
+  <PopulationObjectName>DECISION_ROOT_POP</PopulationObjectName>
+  <TableName>DECISION_ROOT</TableName>
+  <RootItemID>query_query_BANK</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ROOT_ID" id="queryCol_0" dataType="Real" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_BANK" name="query_BANK" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="oracle_cloud">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ROOT_ID" dataType="Real" index="0" />
+      </OutputsList>
+      <SQL><![CDATA[Select BANK.ID As ROOT_ID
+From BANK]]></SQL>
+    </Item>
+    <Item id="f_146" name="k2_currentDateTime" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_146.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="131" fromNodeOrder="0" fromItemID="query_query_BANK" fromColID="queryCol_0" toItemID="tbl_DECISION_ROOT" toColID="tblCol_717867247478491f87737d461b59d6cc" />
+    <Link partId="148" fromNodeOrder="0" fromItemID="f_146" fromColID="fo_146.0" toItemID="tbl_DECISION_ROOT" toColID="tblCol_6d13b91726b4410b9ede94de5ac37925" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

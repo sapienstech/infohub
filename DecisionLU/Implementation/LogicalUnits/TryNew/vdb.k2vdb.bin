@@ -1,0 +1,13 @@
+﻿<Graph version="1.8.0.10" name="vdb.k2vdb.bin" lastPartID="82">
+  <Node id="0" partID="0" name="CITY" isRootView="true" pos="11 213" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CITY","TablePopulationPropertiesList":[{"ID":"query_CITY","Name":"query_CITY","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="47" name="try" isRootView="false" pos="487 202" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"try","TablePopulationPropertiesList":[{"ID":"query_eli_try","Name":"query_eli_try","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="67" name="BLA" isRootView="false" pos="824 208" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"BLA","TablePopulationPropertiesList":[{"ID":"BLA_POP","Name":"BLA_POP","Order":3}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="54" linkType="Database" pointsArr="268 259.5456 278 259.5456 477 248.545578 487 248.545578" fromNodePartID="0" fromNodeColumnName="ID" toNodePartID="47" toNodeColumnName="id" toNodePopulationObjectName="query_eli_try" />
+  <Link from="5" to="6" partID="82" linkType="Database" pointsArr="744 248.545578 754 248.545578 814 254.545563 824 254.545563" fromNodePartID="47" fromNodeColumnName="id" toNodePartID="67" toNodeColumnName="cityId" toNodePopulationObjectName="BLA_POP" />
+</Graph>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>BLA_POP</ID>
+  <PopulationObjectName>BLA_POP</PopulationObjectName>
+  <TableName>BLA</TableName>
+  <RootItemID>query_query_CITY</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="cityId" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="cityName" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="tryId" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="tryName" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_CITY" name="query_CITY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="cityName" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="tryName" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[Select TryNew.CITY.ID As cityId,
+  TryNew.CITY.NAME As cityName,
+  TryNew.TRY.ID As tryId,
+  TryNew.TRY.NAME As tryName
+From TryNew.CITY
+  Inner Join TryNew.TRY On TryNew.CITY.ID = TryNew.TRY.ID]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_CITY" fromColID="queryCol_1" toItemID="tbl_BLA" toColID="tblCol_d8a2dfe17c944f9791307b1bad1d367a" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_CITY" fromColID="queryCol_3" toItemID="tbl_BLA" toColID="tblCol_fca50ef94b1c44e69ba9eec28433d064" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

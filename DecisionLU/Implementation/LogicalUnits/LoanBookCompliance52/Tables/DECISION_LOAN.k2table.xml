@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DECISION_LOAN</Name>
+  <ID>tbl_DECISION_LOAN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="LOAN_TYPE" id="tblCol_5928a641f3fb43968c197f203fe08095" index="0" datatype="text" />
+    <Column name="LOAN_ID" id="tblCol_fb99df3d13e74ef99913bd33ee23562e" index="1" datatype="integer" />
+    <Column name="ROOT_ID" id="tblCol_88da6aaf7fcc4ab1bfc4492aa4a265ef" index="2" datatype="integer" />
+    <Column name="LIST_OF_VALUES" id="tblCol_30b584e4089942e792b9bb2911feaf5f" index="3" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>
