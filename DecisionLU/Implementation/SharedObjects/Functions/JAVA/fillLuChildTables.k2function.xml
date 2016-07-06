@@ -15,15 +15,13 @@
   <Language>Java</Language>
   <FunctionBody>		StringBuilder sqlQuery = new StringBuilder("select * from " + tableName);
 		if(parentInstanceId != null) {
-			//String whereClause = " where " + parentTableName.replace("DECISION_", "") + "_ID = " + String.valueOf(parentInstanceId);
+
 			String whereClause = " where " + parentTableName + "_ID = " + String.valueOf(parentInstanceId); //New!
 			sqlQuery.append(whereClause);
 		}
 
-		// Changes requested by Gil made by Eli (June 2, 2016):
 		Set&lt;String&gt; defensiveParentTableName = new HashSet&lt;&gt;(parentTableNames);
 		defensiveParentTableName.add(tableName);
-		// end of June2 changes	
 
 		ResultSetWrapper resultsWrapper = DBQuery("fabric", sqlQuery.toString(), null);
 		
@@ -32,31 +30,21 @@
 		
 		List&lt;String&gt; columnNames = resultsWrapper.getColumnsNames();
 
-		//tableName = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
-		String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", "")); // New!
-
-		//IoGroup ioGroup = new IoGroup(tableName);
-		IoGroup ioGroup = null; // NEW!
+		IoGroup ioGroup = null;
 
 		if(iogInstance == null){ 
-			// Some of this logic seemed redundant!
-			//ioGroup = new IoGroup("ROOT");
-			ioGroup = new IoGroup(parentTableName); // NEW!
-			//ioGroup.setIoGroupInstances(new ArrayList&lt;&gt;());
-			//iogInstance = new IoGroupInstance();
-			//iogInstance.setIoGroups(new ArrayList&lt;&gt;());
-			//ioGroup.getIoGroupInstances().add(iogInstance);
+			ioGroup = new IoGroup(parentTableName);
 		}
-		else { // NEW!
-			ioGroup = new IoGroup(tableNameUpperCamel); // NEW!
-			iogInstance.setIoGroups(new ArrayList&lt;&gt;()); // NEW! 
+		else {
+			String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
+			ioGroup = new IoGroup(tableNameUpperCamel);
+			iogInstance.setIoGroups(new ArrayList&lt;&gt;()); 
 			iogInstance.getIoGroups().add(ioGroup);
 		}
 		ioGroup.setIoGroupInstances(new ArrayList&lt;&gt;());
 		
-		for (int j = 0; j &lt; results.size(); j++) {
+		for (Object[] result : results) {
 			
-			Object[] result = results.get(j);
 			IoGroupInstance specificInstance = new IoGroupInstance();
 			ioGroup.getIoGroupInstances().add(specificInstance);
 			specificInstance.setIoFactTypes(new ArrayList&lt;&gt;());
@@ -66,7 +54,6 @@
 				String columnName = columnNames.get(i);
 				Object columnValue = result[i];
 				
-				//if(columnName.equalsIgnoreCase(tableName.replace("DECISION_", "") + "_ID")){
 				if(columnName.equalsIgnoreCase(tableName + "_ID")){ // New!
 					
 					KeyValue instanceNameAndId = new KeyValue();
@@ -84,14 +71,14 @@
 							}
 						}
 					}
-				// Changes requested by Gil made by Eli (June 2, 2016):
-				//} else if (columnName.equalsIgnoreCase(parentTableName.replace("DECISION_", "") + "_ID")){ 
 				}  else {
 						List&lt;String&gt; parentTablesAsColumn = parentTableNames.stream()
 							.map(parentTableStr -&gt; (parentTableStr + "_ID").toLowerCase())
 							.collect(Collectors.toList());
+			
+						String msg = "Current table: " + tableName + "\ncurrent column: " + columnName;
+						reportUserMessage(msg + "====================&gt;" + String.join(", ", parentTablesAsColumn));
 						if (parentTablesAsColumn.contains(columnName.toLowerCase())){ 
-				// end of June2 changes
 							KeyValue instanceNameAndId = new KeyValue();
 							instanceNameAndId.setKey(CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, columnName));
 							instanceNameAndId.setValue(String.valueOf(columnValue));
