@@ -24,7 +24,7 @@
 		String rootTable = getRootDecisionTableName(luType);
 		LudbObject table = lut.ludbObjects.get(rootTable);
 		// Change requested by Gil made by Eli (June 2, 2016):
-		IoGroup rootNode = fillLuChildTables(rootTable, null, table, "ROOT", Sets.&lt;String&gt;newHashSet(), String.valueOf(instanceId));
+		IoGroup rootNode = fillLuChildTables(rootTable, null, table, "DECISION_ROOT", Sets.&lt;String&gt;newHashSet(), String.valueOf(instanceId));
 		inputs.setIoGroup(rootNode);
 	
 	}
