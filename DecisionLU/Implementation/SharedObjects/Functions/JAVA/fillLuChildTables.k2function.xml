@@ -36,7 +36,9 @@
 			ioGroup = new IoGroup(parentTableName);
 		}
 		else {
-			String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
+			// The FT names were not Upper Camel in DES! They were all Upper only!
+			//String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
+			String tableNameUpperCamel = tableName.replace("DECISION_", "").replaceAll("_","");
 			ioGroup = new IoGroup(tableNameUpperCamel);
 			iogInstance.setIoGroups(new ArrayList&lt;&gt;()); 
 			iogInstance.getIoGroups().add(ioGroup);
