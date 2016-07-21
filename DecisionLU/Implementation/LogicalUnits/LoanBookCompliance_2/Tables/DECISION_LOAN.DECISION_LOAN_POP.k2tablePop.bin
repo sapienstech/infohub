@@ -1,9 +1,0 @@
-﻿<Graph name="DECISION_LOAN.DECISION_LOAN_POP.k2tablePop.bin" lastPartID="301">
-  <TableNode partID="0" name="DECISION_LOAN" pos="706 172" width="309.3241" />
-  <DBQueryNode partID="124" name="oracle_cloud" pos="232 184" size="253 96.21875" isRoot="true">
-    <DBQuery>{"Name":"query_LOANS","ID":"query_query_LOANS","ConnName":"oracle_cloud","SQL":"Select LOANS.ID LOAN_ID,\r\n  LOANS.LOAN_TYPE,\r\n  LOANS.BANK_ID ROOT_ID\r\nFrom LOANS,\r\n  BANK\r\nWhere LOANS.BANK_ID = BANK.ID","ColumnsList":[{"ID":"queryCol_0","Name":"LOAN_ID","DataType":"Real","Index":0,"IsInputArgument":false},{"ID":"queryCol_1","Name":"LOAN_TYPE","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"ROOT_ID","DataType":"Real","Index":2,"IsInputArgument":true}]}</DBQuery>
-  </DBQueryNode>
-  <Link partID="226" from="0" to="1" pointsArr="485 232.109375 495 232.109375 696 203.036453 706 203.036453" fromNodePartID="124" fromNodeColumnName="LOAN_TYPE" toNodePartID="0" toNodeColumnName="LOAN_TYPE" />
-  <Link partID="284" from="2" to="3" pointsArr="485 220.036453 495 220.036453 696 215.109375 706 215.109375" fromNodePartID="124" fromNodeColumnName="LOAN_ID" toNodePartID="0" toNodeColumnName="LOAN_ID" />
-  <Link partID="301" from="4" to="5" pointsArr="485 244.182281 495 244.182281 696 227.182281 706 227.182281" fromNodePartID="124" fromNodeColumnName="ROOT_ID" toNodePartID="0" toNodeColumnName="ROOT_ID" />
-</Graph>

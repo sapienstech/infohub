@@ -1,8 +1,0 @@
-﻿<Graph name="DECISION_ROOT.ROOT_QRY.k2tablePop.bin" lastPartID="42">
-  <TableNode partID="0" name="DECISION_ROOT" pos="404 30" width="309.3241" />
-  <DBQueryNode partID="25" name="oracle_cloud" pos="51 83" size="253 84.14583" isRoot="true">
-    <DBQuery>{"Name":"query_TEST_COND","ID":"query_query_TEST_COND","ConnName":"oracle_cloud","SQL":"SELECT * FROM TEST_COND","ColumnsList":[{"ID":"queryCol_0","Name":"ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"VALUE","DataType":"Text","Index":1,"IsInputArgument":false}]}</DBQuery>
-  </DBQueryNode>
-  <Link partID="28" from="0" to="1" pointsArr="304 131.109375 314 131.109375 394 61.0364571 404 61.0364571" fromNodePartID="25" fromNodeColumnName="VALUE" toNodePartID="0" toNodeColumnName="TEST_COND" />
-  <Link partID="42" from="2" to="3" pointsArr="304 119.036461 314 119.036461 394 73.109375 404 73.109375" fromNodePartID="25" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="ROOT_ID" />
-</Graph>

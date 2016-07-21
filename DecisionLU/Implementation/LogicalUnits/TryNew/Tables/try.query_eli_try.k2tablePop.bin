@@ -1,8 +1,0 @@
-﻿<Graph name="try.query_eli_try.k2tablePop.bin" lastPartID="20">
-  <TableNode partID="0" name="try" pos="346 76.890625" width="309.324219" />
-  <DBQueryNode partID="5" name="dbCassandra" pos="10 7.927086" size="253 84.14583" isRoot="true">
-    <DBQuery>{"Name":"query_eli_try","ID":"query_query_eli_try","ConnName":"dbCassandra","SQL":"SELECT * FROM eli.try","ColumnsList":[{"ID":"queryCol_0","Name":"id","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"name","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
-  </DBQueryNode>
-  <Link partID="8" from="0" to="1" pointsArr="263 43.9635429 273 43.9635429 336 107.927086 346 107.927086" fromNodePartID="5" fromNodeColumnName="id" toNodePartID="0" toNodeColumnName="id" />
-  <Link partID="20" from="2" to="3" pointsArr="263 56.03646 273 56.03646 336 120 346 120" fromNodePartID="5" fromNodeColumnName="name" toNodePartID="0" toNodeColumnName="name" />
-</Graph>

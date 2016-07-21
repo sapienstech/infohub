@@ -1,5 +1,0 @@
-﻿<Graph version="1.8.0.10" name="vdb.k2vdb.bin" lastPartID="58">
-  <Node id="0" partID="18" name="DECISION_ROOT" isRootView="true" pos="506 257" size="257 137" listGroupSize="250 100" viewType="Table">
-    <TableProperties>{"TableName":"DECISION_ROOT","TablePopulationPropertiesList":[{"ID":"ROOT_QRY","Name":"ROOT_QRY","Order":1}]}</TableProperties>
-  </Node>
-</Graph>

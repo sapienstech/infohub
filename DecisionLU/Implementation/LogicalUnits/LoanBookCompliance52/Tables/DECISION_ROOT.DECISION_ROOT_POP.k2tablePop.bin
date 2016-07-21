@@ -1,7 +1,0 @@
-﻿<Graph name="DECISION_ROOT.DECISION_ROOT_POP.k2tablePop.bin" lastPartID="12">
-  <TableNode partID="0" name="DECISION_ROOT" pos="460.537018 199" width="309.787079" />
-  <FunctionMapNode id="0" L0="1" R0="2" partID="4" topLabel="dummyROOT (4)" pos="122.994072 233" size="153.869568 45.091156" isRoot="true">
-    <KFunction>{"Name":"dummyROOT","ID":"f_4","Category":"ROOT","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"Object[] returnVal = new Object[]{ ROOT_ID };\n\nyield(returnVal);","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"ROOT_ID","ID":"fi_4.0","Index":0,"DataType":"Integer","Comment":""}],"outputParams":[{"Name":"ROOT_ID","ID":"fo_4.0","Index":0,"DataType":"Integer","Comment":""}]}</KFunction>
-  </FunctionMapNode>
-  <Link partID="7" from="2" to="3" pointsArr="276.863647 258.091156 286.863647 258.091156 451 230.036453 461 230.036453" fromNodePartID="4" fromNodeColumnName="ROOT_ID" toNodePartID="0" toNodeColumnName="ROOT_ID" />
-</Graph>
