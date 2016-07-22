@@ -13,7 +13,7 @@
   <Desc />
   <Auther name="" id="" />
   <Language>Java</Language>
-  <FunctionBody>return "&lt;Response&gt;&lt;InstanceId&gt;123&lt;/InstanceId&gt;&lt;TxnId&gt;456&lt;/TxnId&gt;&lt;Passed&gt;true&lt;/Passed&gt;&lt;/Response&gt;";
+  <FunctionBody>return "";
 </FunctionBody>
   <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
