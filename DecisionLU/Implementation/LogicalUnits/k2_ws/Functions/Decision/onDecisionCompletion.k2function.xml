@@ -13,14 +13,9 @@
   <Desc />
   <Auther name="" id="" />
   <Language>Java</Language>
-  <FunctionBody>		JAXBContext jaxbContext = JAXBContext.newInstance(IoGroup.class);
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		IoGroup ioGroup = (IoGroup) jaxbUnmarshaller
-				.unmarshal(new StringReader(executionResult));
-
-		String rootTable = getRootDecisionTableName(luType).replace("DECISION_", "");;
-		populateConclusionTableWithResults(ioGroup, rootTable, luType, null);</FunctionBody>
-  <IsSyntaxValid>true</IsSyntaxValid>
+  <FunctionBody>return "&lt;Response&gt;&lt;InstanceId&gt;123&lt;/InstanceId&gt;&lt;TxnId&gt;456&lt;/TxnId&gt;&lt;Passed&gt;true&lt;/Passed&gt;&lt;/Response&gt;";
+</FunctionBody>
+  <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
     <Input name="executionResult" id="fi.Decision.onDecisionCompletion.0" index="0" dataType="String">
@@ -30,5 +25,9 @@
       <Comment />
     </Input>
   </InputParams>
-  <OutputParams />
+  <OutputParams>
+    <Output name="response" id="fo.Decision.onDecisionCompletion.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
 </KFunction>

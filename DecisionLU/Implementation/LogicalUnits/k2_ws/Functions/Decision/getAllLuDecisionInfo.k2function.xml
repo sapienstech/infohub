@@ -13,28 +13,33 @@
   <Desc />
   <Auther name="" id="" />
   <Language>Java</Language>
-  <FunctionBody>
+  <FunctionBody>ExecutionInput inputs = new ExecutionInput();
 
-	ExecutionInput inputs = new ExecutionInput();
+boolean successfullyExecuted;
+try {
+	successfullyExecuted = DBExecute("fabric", "get " + luType + "." + instanceId, null);
 	
-	if (DBExecute("fabric", "get " + luType + "." + instanceId, null)) {
-		
+	if (successfullyExecuted) {
 		LUType lut = LUTypeFactoryImpl.getInstance().getTypeByName(luType.toString());
-		LudbObject root = lut.getRootObject();
+		LudbObject root  = lut.getRootObject();
 		String rootTable = getRootDecisionTableName(luType);
 		LudbObject table = lut.ludbObjects.get(rootTable);
-		// Change requested by Gil made by Eli (June 2, 2016):
-		IoGroup rootNode = fillLuChildTables(rootTable, null, table, "DECISION_ROOT", Sets.&lt;String&gt;newHashSet(), String.valueOf(instanceId));
+		IoGroup rootNode = fillLuChildTables(rootTable, null, table, "DECISION_ROOT", Sets.&lt;String&gt; newHashSet(), String.valueOf(instanceId));
 		inputs.setIoGroup(rootNode);
-	
 	}
-	
+
 	JAXBContext context = JAXBContext.newInstance(ExecutionInput.class);
 	Marshaller marshaller = context.createMarshaller();
 	StringWriter stringWriter = new StringWriter();
 	marshaller.marshal(inputs, stringWriter);
 	String xml = stringWriter.toString();
-	return xml;</FunctionBody>
+	return xml;
+
+} catch (SQLException e) {
+	String message = e.getMessage();
+	reportUserMessage(message);
+	return null;
+}</FunctionBody>
   <IsSyntaxValid>true</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
