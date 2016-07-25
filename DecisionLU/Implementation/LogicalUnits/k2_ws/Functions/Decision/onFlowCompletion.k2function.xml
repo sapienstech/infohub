@@ -24,6 +24,9 @@
     <Input name="luType" id="fi.Decision.onFlowCompletion.1" index="1" dataType="String">
       <Comment />
     </Input>
+    <Input name="instanceId" id="fi.Decision.onFlowCompletion.2" index="2" dataType="String">
+      <Comment />
+    </Input>
   </InputParams>
   <OutputParams>
     <Output name="response" id="fo.Decision.onFlowCompletion.0" index="0" dataType="String">
