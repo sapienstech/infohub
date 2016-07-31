@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>getRootDecisionTableName</Name>
-  <ID>JAVA.getRootDecisionTableName</ID>
-  <Category>JAVA</Category>
+  <ID>DECISION.getRootDecisionTableName</ID>
+  <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
   <FunctionType>WebService</FunctionType>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
@@ -23,15 +23,15 @@ return tableNames.stream()
 		.filter(name -&gt; name.startsWith("DECISION_ROOT"))
 		.findFirst()
 		.orElse(null);</FunctionBody>
-  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
-    <Input name="luName" id="fi.JAVA.getRootDecisionTableName.0" index="0" dataType="String">
+    <Input name="luName" id="fi.DECISION.getRootDecisionTableName.0" index="0" dataType="String">
       <Comment />
     </Input>
   </InputParams>
   <OutputParams>
-    <Output name="rootTable" id="fo.JAVA.getRootDecisionTableName.0" index="0" dataType="String">
+    <Output name="rootTable" id="fo.DECISION.getRootDecisionTableName.0" index="0" dataType="String">
       <Comment />
     </Output>
   </OutputParams>

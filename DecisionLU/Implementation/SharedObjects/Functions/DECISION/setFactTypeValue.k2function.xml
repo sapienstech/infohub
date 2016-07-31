@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>setFactTypeValue</Name>
-  <ID>JAVA.setFactTypeValue</ID>
-  <Category>JAVA</Category>
+  <ID>DECISION.setFactTypeValue</ID>
+  <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
   <FunctionType>RegularFunction</FunctionType>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
@@ -23,13 +23,13 @@
 				factType.setValue(columnValue);
 			}
 		}</FunctionBody>
-  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
-    <Input name="factType" id="fi.JAVA.setFactTypeValue.0" index="0" dataType="com.sapiens.des.engine.model.IoFactType">
+    <Input name="factType" id="fi.DECISION.setFactTypeValue.0" index="0" dataType="com.sapiens.des.engine.model.IoFactType">
       <Comment />
     </Input>
-    <Input name="columnValue" id="fi.JAVA.setFactTypeValue.1" index="1" dataType="Object">
+    <Input name="columnValue" id="fi.DECISION.setFactTypeValue.1" index="1" dataType="Object">
       <Comment />
     </Input>
   </InputParams>
