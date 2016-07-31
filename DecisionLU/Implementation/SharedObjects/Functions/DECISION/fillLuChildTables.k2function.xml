@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>fillLuChildTables</Name>
-  <ID>JAVA.fillLuChildTables</ID>
-  <Category>JAVA</Category>
+  <ID>DECISION.fillLuChildTables</ID>
+  <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
   <FunctionType>WebService</FunctionType>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
@@ -36,9 +36,9 @@
 			ioGroup = new IoGroup(parentTableName);
 		}
 		else {
-			// The FT names were not Upper Camel in DES! They were all Upper only!
-			//String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
-			String tableNameUpperCamel = tableName.replace("DECISION_", "").replaceAll("_","");
+			// The FT names were not Upper Camel in DES! They were all Upper only! (reverting this change!)
+			String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
+			//String tableNameUpperCamel = tableName.replace("DECISION_", "").replaceAll("_","");
 			ioGroup = new IoGroup(tableNameUpperCamel);
 			iogInstance.setIoGroups(new ArrayList&lt;&gt;()); 
 			iogInstance.getIoGroups().add(ioGroup);
@@ -99,30 +99,30 @@
 		
 		return ioGroup;
 </FunctionBody>
-  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
-    <Input name="tableName" id="fi.JAVA.fillLuChildTables.0" index="0" dataType="String">
+    <Input name="tableName" id="fi.DECISION.fillLuChildTables.0" index="0" dataType="String">
       <Comment />
     </Input>
-    <Input name="iogInstance" id="fi.JAVA.fillLuChildTables.1" index="1" dataType="com.sapiens.des.engine.model.IoGroupInstance">
+    <Input name="iogInstance" id="fi.DECISION.fillLuChildTables.1" index="1" dataType="com.sapiens.des.engine.model.IoGroupInstance">
       <Comment />
     </Input>
-    <Input name="table" id="fi.JAVA.fillLuChildTables.2" index="2" dataType="com.k2view.cdbms.lut.LudbObject">
+    <Input name="table" id="fi.DECISION.fillLuChildTables.2" index="2" dataType="com.k2view.cdbms.lut.LudbObject">
       <Comment />
     </Input>
-    <Input name="parentTableName" id="fi.JAVA.fillLuChildTables.3" index="3" dataType="String">
+    <Input name="parentTableName" id="fi.DECISION.fillLuChildTables.3" index="3" dataType="String">
       <Comment />
     </Input>
-    <Input name="parentTableNames" id="fi.JAVA.fillLuChildTables.4" index="4" dataType="Set&lt;String&gt;">
+    <Input name="parentTableNames" id="fi.DECISION.fillLuChildTables.4" index="4" dataType="Set&lt;String&gt;">
       <Comment />
     </Input>
-    <Input name="parentInstanceId" id="fi.JAVA.fillLuChildTables.5" index="5" dataType="String">
+    <Input name="parentInstanceId" id="fi.DECISION.fillLuChildTables.5" index="5" dataType="String">
       <Comment />
     </Input>
   </InputParams>
   <OutputParams>
-    <Output name="val" id="fo.JAVA.fillLuChildTables.0" index="0" dataType="IoGroup">
+    <Output name="val" id="fo.DECISION.fillLuChildTables.0" index="0" dataType="IoGroup">
       <Comment />
     </Output>
   </OutputParams>

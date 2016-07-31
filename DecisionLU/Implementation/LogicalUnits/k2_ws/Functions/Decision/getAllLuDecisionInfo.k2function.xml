@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>getAllLuDecisionInfo</Name>
-  <ID>Decision.getAllLuDecisionInfo</ID>
-  <Category>Decision</Category>
+  <ID>DECISION.getAllLuDecisionInfo</ID>
+  <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
   <FunctionType>WebService</FunctionType>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
@@ -40,18 +40,18 @@ try {
 	reportUserMessage(message);
 	return null;
 }</FunctionBody>
-  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
-    <Input name="luType" id="fi.Decision.getAllLuDecisionInfo.0" index="0" dataType="String">
+    <Input name="luType" id="fi.DECISION.getAllLuDecisionInfo.0" index="0" dataType="String">
       <Comment />
     </Input>
-    <Input name="instanceId" id="fi.Decision.getAllLuDecisionInfo.1" index="1" dataType="String">
+    <Input name="instanceId" id="fi.DECISION.getAllLuDecisionInfo.1" index="1" dataType="String">
       <Comment />
     </Input>
   </InputParams>
   <OutputParams>
-    <Output name="xml" id="fo.Decision.getAllLuDecisionInfo.0" index="0" dataType="Object">
+    <Output name="xml" id="fo.DECISION.getAllLuDecisionInfo.0" index="0" dataType="Object">
       <Comment />
     </Output>
   </OutputParams>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>onFlowCompletion</Name>
-  <ID>Decision.onFlowCompletion</ID>
-  <Category>Decision</Category>
+  <ID>DECISION.onFlowCompletion</ID>
+  <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
   <FunctionType>WebService</FunctionType>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
@@ -13,23 +13,23 @@
   <Desc />
   <Auther name="" id="" />
   <Language>Java</Language>
-  <FunctionBody>return "";
+  <FunctionBody>return null;
 </FunctionBody>
   <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
-    <Input name="executionResult" id="fi.Decision.onFlowCompletion.0" index="0" dataType="String">
+    <Input name="executionResult" id="fi.DECISION.onFlowCompletion.0" index="0" dataType="String">
       <Comment />
     </Input>
-    <Input name="luType" id="fi.Decision.onFlowCompletion.1" index="1" dataType="String">
+    <Input name="luType" id="fi.DECISION.onFlowCompletion.1" index="1" dataType="String">
       <Comment />
     </Input>
-    <Input name="instanceId" id="fi.Decision.onFlowCompletion.2" index="2" dataType="String">
+    <Input name="instanceId" id="fi.DECISION.onFlowCompletion.2" index="2" dataType="String">
       <Comment />
     </Input>
   </InputParams>
   <OutputParams>
-    <Output name="response" id="fo.Decision.onFlowCompletion.0" index="0" dataType="String">
+    <Output name="response" id="fo.DECISION.onFlowCompletion.0" index="0" dataType="String">
       <Comment />
     </Output>
   </OutputParams>
