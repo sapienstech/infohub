@@ -13,8 +13,7 @@
   <Desc />
   <Auther name="" id="" />
   <Language>Java</Language>
-  <FunctionBody>return null;
-</FunctionBody>
+  <FunctionBody>return null;</FunctionBody>
   <IsSyntaxValid>false</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
