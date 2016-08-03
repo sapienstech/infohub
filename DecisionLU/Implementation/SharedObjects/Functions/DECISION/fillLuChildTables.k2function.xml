@@ -33,6 +33,7 @@
 		IoGroup ioGroup = null;
 
 		if(iogInstance == null){ 
+			parentTableName = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", "")); 
 			ioGroup = new IoGroup(parentTableName);
 		}
 		else {
