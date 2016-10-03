@@ -39,7 +39,6 @@
 		else {
 			String tableNameUpperCamel = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableName.replace("DECISION_", ""));
 			ioGroup = new IoGroup(tableNameUpperCamel);
-			iogInstance.setIoGroups(new ArrayList&lt;&gt;()); 
 			iogInstance.getIoGroups().add(ioGroup);
 		}
 		ioGroup.setIoGroupInstances(new ArrayList&lt;&gt;());
@@ -49,6 +48,7 @@
 			IoGroupInstance specificInstance = new IoGroupInstance();
 			ioGroup.getIoGroupInstances().add(specificInstance);
 			specificInstance.setIoFactTypes(new ArrayList&lt;&gt;());
+			specificInstance.setIoGroups(new ArrayList&lt;&gt;());
 			Set&lt;KeyValue&gt; executionKeyValues = Sets.newHashSet();
 			for (int i = 0; i &lt; columnNames.size(); i++) {
 
