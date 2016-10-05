@@ -55,7 +55,7 @@
 				String columnName = columnNames.get(i);
 				Object columnValue = result[i];
 				
-				if(columnName.equalsIgnoreCase(tableName + "_ID")){ // New!
+				if(columnName.equalsIgnoreCase(tableName + "_ID")){
 					
 					KeyValue instanceNameAndId = new KeyValue();
 					instanceNameAndId.setKey(CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, columnName));
