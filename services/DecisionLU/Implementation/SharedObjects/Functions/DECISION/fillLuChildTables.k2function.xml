@@ -16,7 +16,7 @@
   <FunctionBody>		StringBuilder sqlQuery = new StringBuilder("select * from " + tableName);
 		if(parentInstanceId != null) {
 
-			String whereClause = " where " + parentTableName + "_ID = " + String.valueOf(parentInstanceId); //New!
+			String whereClause = " where " + parentTableName + "_ID = '" + String.valueOf(parentInstanceId) + "'";
 			sqlQuery.append(whereClause);
 		}
 
