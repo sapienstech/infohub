@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DecisionLU</Name>
+  <CreateDate>2016-06-02T18:50:36.7256147+03:00</CreateDate>
+  <CreateUserId />
+  <ProductVersion>3.6.4.0</ProductVersion>
+  <UseTableObject>true</UseTableObject>
+  <ProjectHasDiagramBinFiles>false</ProjectHasDiagramBinFiles>
+  <ProjectItemPropList />
+  <ProjectItemsCategoryList />
+  <Description />
+</Project>
