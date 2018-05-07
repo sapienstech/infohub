@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.6.4.0">
   <Name>getRootDecisionTableName</Name>
   <ID>DECISION.getRootDecisionTableName</ID>
   <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
-  <FunctionType>WebService</FunctionType>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
   <SaveToDLUR>false</SaveToDLUR>
   <ApiFunction>false</ApiFunction>
   <DecisionFunction>false</DecisionFunction>
   <RequiresLuReference>false</RequiresLuReference>
   <Desc />
-  <Auther name="" id="" />
   <Language>Java</Language>
   <FunctionBody>ResultSetWrapper results = DBQuery("fabric", "pragma " + luName + ".table_list", null);
 Set&lt;String&gt; tableNames = new HashSet&lt;&gt;();
@@ -23,7 +23,7 @@ return tableNames.stream()
 		.filter(name -&gt; name.startsWith("DECISION_ROOT"))
 		.findFirst()
 		.orElse(null);</FunctionBody>
-  <IsSyntaxValid>false</IsSyntaxValid>
+  <IsSyntaxValid>true</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
     <Input name="luName" id="fi.DECISION.getRootDecisionTableName.0" index="0" dataType="String">
