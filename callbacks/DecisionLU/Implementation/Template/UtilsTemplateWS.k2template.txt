@@ -1,0 +1,48 @@
+/////////////////////////////////////////////////////////////////////////
+// Utils - Auto generated file (contains all Web Services and Globals)
+/////////////////////////////////////////////////////////////////////////
+package com.k2view.cdbms.#luName#;
+import java.util.*;
+import java.sql.*;
+import java.math.*;
+import java.io.*;
+import com.k2view.cdbms.shared.*;
+import com.k2view.cdbms.sync.*;
+import com.k2view.cdbms.lut.*;
+import com.k2view.cdbms.shared.logging.LogEntry.*;
+import com.k2view.cdbms.func.oracle.OracleToDate;
+import com.k2view.cdbms.func.oracle.OracleRownum;
+import javax.xml.bind.Unmarshaller;
+import com.google.common.collect.Multimap;
+import com.google.common.base.CaseFormat;
+import com.google.common.collect.Sets;
+import java.util.stream.Collectors;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import com.sapiens.des.engine.model.FlowResult;
+import com.sapiens.des.engine.model.IoFactType;
+import com.sapiens.des.engine.model.IoGroup;
+import com.sapiens.des.engine.model.IoGroupInstance;
+import com.sapiens.des.engine.model.KeyValue;
+import com.sapiens.des.execution.model.ExecutionInput;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
+import org.apache.commons.lang3.StringUtils;
+public class Utils extends WebServiceUtils {
+    public Utils(LUType f) {
+        super(f);
+    }
+    #methods#
+    #each#
+    /* !COMMENT! */
+    public !RETRUN_TYPE! !NAME!(!ARGS!) throws Exception {
+!BODY!
+    }
+    #end#
+    #globals#
+    #each#
+    /* !COMMENT! */
+    public static final String !NAME! = "!VALUE!";
+    #end#
+}

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.6.4.0">
   <Name>fillLuChildTables</Name>
   <ID>DECISION.fillLuChildTables</ID>
   <Category>DECISION</Category>
   <FunctionLevel>Project</FunctionLevel>
-  <FunctionType>WebService</FunctionType>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
   <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
   <SaveToDLUR>false</SaveToDLUR>
   <ApiFunction>false</ApiFunction>
   <DecisionFunction>false</DecisionFunction>
   <RequiresLuReference>false</RequiresLuReference>
   <Desc />
-  <Auther name="" id="" />
   <Language>Java</Language>
   <FunctionBody>		StringBuilder sqlQuery = new StringBuilder("select * from " + tableName);
 		if(parentInstanceId != null) {
@@ -98,7 +98,7 @@
 		
 		return ioGroup;
 </FunctionBody>
-  <IsSyntaxValid>false</IsSyntaxValid>
+  <IsSyntaxValid>true</IsSyntaxValid>
   <IsRootFunction>false</IsRootFunction>
   <InputParams>
     <Input name="tableName" id="fi.DECISION.fillLuChildTables.0" index="0" dataType="String">
